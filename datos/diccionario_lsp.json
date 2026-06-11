@@ -4313,618 +4313,618 @@
   },
   {
     "id": "LSP-000544",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "ayacucho",
     "descripcion": "Configurar letra \"A\" con ambas manos y cruzarlas en el pecho.",
-    "archivo_imagen": "imagenes/paises_lugares/ayacucho.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/ayacucho.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000545",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "cajamarca",
     "descripcion": "Sobre el antebrazo izquierdo configurar con la mano derecha las letras “C” y “A”.",
-    "archivo_imagen": "imagenes/paises_lugares/cajamarca.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/cajamarca.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000546",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "cerro de pasco",
     "descripcion": "1. Configurar \"C\" con la mano derecha en el antebrazo izquierdo. 2. Configurar \"P\" a la altura del codo.",
-    "archivo_imagen": "imagenes/paises_lugares/cerro_de_pasco.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/cerro_de_pasco.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000547",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "chiclayo",
     "descripcion": "Apoyar sobre la mejilla las yemas de todos los dedos. Realizar movimientos hacia afuera juntando los dedos.",
-    "archivo_imagen": "imagenes/paises_lugares/chiclayo.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/chiclayo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000548",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "cuzco",
     "descripcion": "1. Configurar “C” con la mano derecha a la altura de la frente . 2. Apoyar el dorso de la mano derecha en la frente, los dedos índice y medio extendidos y separados,los demás dedos flexionados sobre la palma.",
-    "archivo_imagen": "imagenes/paises_lugares/cuzco.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/cuzco.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000549",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "huancavelica",
     "descripcion": "Cruzar los brazos y colocar los dedos índice y medio extendidos, de ambas manos en los hombros, desde esa posición llevarlos al lado opuesto a la altura de la cintura.",
-    "archivo_imagen": "imagenes/paises_lugares/huancavelica.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/huancavelica.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000550",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "italia",
     "descripcion": "Con los dedos pulgar e índice extendidos, los demás dedos flexionados, realizar un movimiento ondulatorio delante del tronco.",
-    "archivo_imagen": "imagenes/paises_lugares/italia.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/italia.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000551",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "mexico",
     "descripcion": "1. Colocar los dedos índice y medio extendidos en la frente. 2. Girar la posición hacia afuera.",
-    "archivo_imagen": "imagenes/paises_lugares/mexico.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/mexico.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000552",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "paraguay",
     "descripcion": "Bajar la mano derecha con los dedos extendidos hacia el índice de la mano izquierda.",
-    "archivo_imagen": "imagenes/paises_lugares/paraguay.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/paraguay.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000553",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "peru",
     "descripcion": "Llevar a la frente el dorso de la mano derecha con los dedos índice y medio extendidos y separados, los demás dedos flexionados.",
-    "archivo_imagen": "imagenes/paises_lugares/peru.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/peru.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000554",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "puerto rico",
     "descripcion": "Sobre el dorso de la mano izquierda en puño configurar “P” y la “R” con la mano derecha.",
-    "archivo_imagen": "imagenes/paises_lugares/puerto_rico.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/puerto_rico.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000555",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "américa",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_221_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_221_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000556",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "américa del sur",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_221_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_221_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000557",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "áfrica",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_221_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_221_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000558",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "asia",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_221_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_221_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000559",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "oceanía",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_221_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_221_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000560",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "europa",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_221_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_221_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000561",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "alemania",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_222_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_222_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000562",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "argentina",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_222_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_222_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000563",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "bolivia",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_222_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_222_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000564",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "brasil",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_222_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_222_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000565",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "canadá",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_222_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_222_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000566",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "chile",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_222_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_222_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000567",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "china",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_223_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_223_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000568",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "colombia",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_223_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_223_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000569",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "costa rica",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_223_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_223_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000570",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "cuba",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_223_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_223_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000571",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "ecuador",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_223_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_223_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000572",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "egipto",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_223_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_223_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000573",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "españa",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_224_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_224_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000574",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "estados unidos",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_224_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_224_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000575",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "francia",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_224_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_224_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000576",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "holanda",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_224_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_224_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000577",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "india",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_224_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_224_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000578",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "inglaterra",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_224_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_224_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000579",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "uruguay",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_226_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_226_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000580",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "venezuela",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_226_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_226_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000581",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "amazonas",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_226_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_226_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000582",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "ancash",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_226_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_226_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000583",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "apurímac",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_226_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_226_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000584",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "arequipa",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_226_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_226_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000585",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "huánuco",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_228_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_228_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000586",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "huancayo",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_228_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_228_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000587",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "ica",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_228_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_228_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000588",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "iquitos",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_228_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_228_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000589",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "madre de dios",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_228_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_228_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000590",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "pucallpa",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_228_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_228_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000591",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "puno",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_229_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_229_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000592",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san martin",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_229_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_229_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000593",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "tacna",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_229_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_229_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000594",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "trujillo",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_229_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_229_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000595",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "tumbes",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_229_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_229_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000596",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "ucayali",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_229_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_229_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000597",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "lima",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_230_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_230_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000598",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "ate",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_230_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_230_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000599",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "barranco",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_230_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_230_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000600",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "callao",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_230_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_230_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000601",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "comas",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_230_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_230_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000602",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "chorrillos",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_230_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_230_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000603",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "chosica",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_231_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_231_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000604",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "jesús maría",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_231_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_231_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000605",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "la victoria",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_231_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_231_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000606",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "lince",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_231_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_231_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000607",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "la molina",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_231_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_231_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000608",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "magdalena",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_231_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_231_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000609",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "miraflores",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_232_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_232_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000610",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "monterrico",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_232_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_232_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000611",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "pueblo libre",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_232_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_232_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000612",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "rímac",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_232_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_232_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000613",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san borja",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_232_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_232_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000614",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san isidro",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_232_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_232_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000615",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san juan de lurigancho",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_233_tarjeta_01.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_233_tarjeta_01.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000616",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san luis",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_233_tarjeta_02.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_233_tarjeta_02.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000617",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san martín de porres",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_233_tarjeta_03.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_233_tarjeta_03.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000618",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "san miguel",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_233_tarjeta_04.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_233_tarjeta_04.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000619",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "surco",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_233_tarjeta_05.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_233_tarjeta_05.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
     "id": "LSP-000620",
-    "categoria": "paises_lugares",
+    "categoria": "paises_y_cuidades",
     "palabra": "villa el salvador",
     "descripcion": "",
-    "archivo_imagen": "imagenes/paises_lugares/revisar_pagina_233_tarjeta_06.png",
+    "archivo_imagen": "imagenes/paises_y_cuidades/revisar_pagina_233_tarjeta_06.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
