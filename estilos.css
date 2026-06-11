@@ -588,3 +588,6 @@ footer a {
     transition: none !important;
   }
 }
+.fuente-tarjeta {
+  display: none;
+}
