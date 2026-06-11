@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta
+    name="description"
+    content="Banco Digital de Lengua de Señas Peruana para consulta educativa."
+  >
+  <title>Banco Digital de Lengua de Señas Peruana</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <a class="salto-contenido" href="#contenido">Ir al contenido</a>
+
+  <header class="cabecera">
+    <nav class="navegacion" aria-label="Navegación principal">
+      <a class="marca" href="index.html" aria-label="Inicio">
+        <span class="marca-icono" aria-hidden="true">LSP</span>
+        <span>Banco Digital</span>
+      </a>
+      <a class="enlace-creditos" href="creditos.html">Créditos</a>
+    </nav>
+
+    <div class="presentacion">
+      <p class="etiqueta-superior">Consulta educativa abierta</p>
+      <h1>Banco Digital de Lengua de Señas Peruana</h1>
+      <p class="subtitulo">
+        Recurso visual de apoyo para la inclusión educativa
+      </p>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="panel-busqueda" aria-labelledby="titulo-busqueda">
+      <div class="panel-encabezado">
+        <div>
+          <p class="seccion-etiqueta">Explorar el banco</p>
+          <h2 id="titulo-busqueda">Encuentra una seña</h2>
+        </div>
+        <button id="limpiar" class="boton-secundario" type="button">
+          Limpiar búsqueda
+        </button>
+      </div>
+
+      <div class="controles">
+        <div class="campo">
+          <label for="busqueda">Buscar por palabra</label>
+          <div class="entrada-busqueda">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+            >
+              <path
+                d="m21 21-4.7-4.7m2.2-5.3a7.5 7.5 0 1 1-15 0 7.5 7.5 0 0 1 15 0Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-width="2"
+              />
+            </svg>
+            <input
+              id="busqueda"
+              type="search"
+              autocomplete="off"
+              placeholder="Ejemplo: familia, aprender, gracias"
+            >
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="categoria">Filtrar por categoría</label>
+          <select id="categoria">
+            <option value="">Todas las categorías</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="resultado-resumen">
+        <p id="contador" aria-live="polite">Cargando señas…</p>
+        <p id="mostrando" class="mostrando" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section aria-labelledby="titulo-resultados">
+      <h2 id="titulo-resultados" class="solo-lectores">
+        Resultados de búsqueda
+      </h2>
+      <div id="estado" class="estado-carga" role="status">
+        Preparando el banco de señas…
+      </div>
+      <div id="galeria" class="galeria" aria-live="polite"></div>
+      <div class="acciones-galeria">
+        <button
+          id="cargar-mas"
+          class="boton-principal"
+          type="button"
+          hidden
+        >
+          Mostrar más señas
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Recurso de consulta con finalidad educativa y de inclusión.
+      <a href="creditos.html">Conoce la fuente y condiciones de uso</a>.
+    </p>
+  </footer>
+
+  <template id="plantilla-tarjeta">
+    <article class="tarjeta">
+      <div class="marco-imagen">
+        <img class="imagen-sena" loading="lazy" decoding="async" alt="">
+      </div>
+      <div class="tarjeta-contenido">
+        <p class="categoria-tarjeta"></p>
+        <h3 class="palabra-tarjeta"></h3>
+        <p class="fuente-tarjeta"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
