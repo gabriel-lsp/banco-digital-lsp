@@ -592,8 +592,9 @@ footer a {
   display: none;
 }
 .logo-crebe {
-  width: 140px;
-  height: auto;
+  width: 140px !important;
+  max-width: 140px !important;
+  height: auto !important;
   object-fit: contain;
   display: block;
 }
