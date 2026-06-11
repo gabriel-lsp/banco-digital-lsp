@@ -2324,7 +2324,7 @@
     "categoria": "colores",
     "palabra": "amarillo",
     "descripcion": "Llevar la mano derecha con los dedos pulgar e índice extendidos hacia la barbilla.",
-    "archivo_imagen": "imagenes/colegio_colores/amarillo.png",
+    "archivo_imagen": "imagenes/colores/amarillo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2332,7 +2332,7 @@
     "categoria": "colores",
     "palabra": "anaranjado",
     "descripcion": "Configurar la seña de naranja.",
-    "archivo_imagen": "imagenes/colegio_colores/anaranjado.png",
+    "archivo_imagen": "imagenes/colores/anaranjado.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2340,7 +2340,7 @@
     "categoria": "contexto_escolar",
     "palabra": "arte",
     "descripcion": "Con el meñique de la mano derecha en la palma de la mano izquierda dibujar un trazo ondulatorio.",
-    "archivo_imagen": "imagenes/colegio_colores/arte.png",
+    "archivo_imagen": "imagenes/contexto_escolar/arte.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2348,7 +2348,7 @@
     "categoria": "contexto_escolar",
     "palabra": "audifono",
     "descripcion": "Llevar índice y pulgar semiflexionados detrás del pabellón de la oreja.",
-    "archivo_imagen": "imagenes/colegio_colores/audifono.png",
+    "archivo_imagen": "imagenes/contexto_escolar/audifono.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2356,7 +2356,7 @@
     "categoria": "colores",
     "palabra": "azul",
     "descripcion": "Con el pulgar extendido,los dedos flexionados sobre la palma, realizar un movimiento ondulatorio hacia abajo.",
-    "archivo_imagen": "imagenes/colegio_colores/azul.png",
+    "archivo_imagen": "imagenes/colores/azul.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2364,7 +2364,7 @@
     "categoria": "colores",
     "palabra": "blanco",
     "descripcion": "Apoyar la palma de la mano derecha en la mejilla y realizar un movimiento suave hacia atrás.",
-    "archivo_imagen": "imagenes/colegio_colores/blanco.png",
+    "archivo_imagen": "imagenes/colores/blanco.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2372,7 +2372,7 @@
     "categoria": "contexto_escolar",
     "palabra": "borrador",
     "descripcion": "Apoyando el puño de la mano derecha sobre la palma de la mano izquierda, realizar movimientos de izquierda a derecha.",
-    "archivo_imagen": "imagenes/colegio_colores/borrador.png",
+    "archivo_imagen": "imagenes/contexto_escolar/borrador.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2380,7 +2380,7 @@
     "categoria": "colores",
     "palabra": "celeste",
     "descripcion": "Configurando “C” con ambas manos realizar un movimiento circular.",
-    "archivo_imagen": "imagenes/colegio_colores/celeste.png",
+    "archivo_imagen": "imagenes/colores/celeste.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2388,7 +2388,7 @@
     "categoria": "contexto_escolar",
     "palabra": "ciencia",
     "descripcion": "Configurando “C” con ambas manos, realizar un movimiento circular de adelante hacia atrás.",
-    "archivo_imagen": "imagenes/colegio_colores/ciencia.png",
+    "archivo_imagen": "imagenes/contexto_escolar/ciencia.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2396,7 +2396,7 @@
     "categoria": "contexto_escolar",
     "palabra": "clase",
     "descripcion": "Ambas manos con los dedos semiflexionados configurando “C” realizar un movimiento circular hacia afuera.",
-    "archivo_imagen": "imagenes/colegio_colores/clase.png",
+    "archivo_imagen": "imagenes/contexto_escolar/clase.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2404,7 +2404,7 @@
     "categoria": "contexto_escolar",
     "palabra": "colegio",
     "descripcion": "Con ambas manos juntas con los dedos semiflexionados realizar un movimiento circular de izquierda a derecha.",
-    "archivo_imagen": "imagenes/colegio_colores/colegio.png",
+    "archivo_imagen": "imagenes/contexto_escolar/colegio.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2412,7 +2412,7 @@
     "categoria": "colores",
     "palabra": "colores",
     "descripcion": "Mover delante de la boca, los dedos índice, medio, anular y meñique extendidos.",
-    "archivo_imagen": "imagenes/colegio_colores/colores.png",
+    "archivo_imagen": "imagenes/colores/colores.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2420,7 +2420,7 @@
     "categoria": "contexto_escolar",
     "palabra": "computadora",
     "descripcion": "Configurar “C” con ambas manos, diseñar un cuadrado y mover los dedos simulando acción de teclear.",
-    "archivo_imagen": "imagenes/colegio_colores/computadora.png",
+    "archivo_imagen": "imagenes/contexto_escolar/computadora.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2428,7 +2428,7 @@
     "categoria": "contexto_escolar",
     "palabra": "cuaderno",
     "descripcion": "1. Juntar las palmas de las manos. 2. Extender las palmas con un movimiento lateral.",
-    "archivo_imagen": "imagenes/colegio_colores/cuaderno.png",
+    "archivo_imagen": "imagenes/contexto_escolar/cuaderno.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2436,7 +2436,7 @@
     "categoria": "contexto_escolar",
     "palabra": "diccionario",
     "descripcion": "Configurar “D” con la mano derecha sobre la palma de la mano izquierda realizando movimientos cortos de derecha a izquierda",
-    "archivo_imagen": "imagenes/colegio_colores/diccionario.png",
+    "archivo_imagen": "imagenes/contexto_escolar/diccionario.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2444,7 +2444,7 @@
     "categoria": "contexto_escolar",
     "palabra": "diploma",
     "descripcion": "1. Diseñar un rectángulo con los índices de ambas manos, los demás dedos flexionados 2. Llevar al lado izquierdo del tronco la mano derecha con las yemas del pulgar e índice unidas, los demás dedos extendidos.",
-    "archivo_imagen": "imagenes/colegio_colores/diploma.png",
+    "archivo_imagen": "imagenes/contexto_escolar/diploma.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2452,7 +2452,7 @@
     "categoria": "contexto_escolar",
     "palabra": "examen",
     "descripcion": "1. Configurar “E” con ambas manos. 2. Abrir las manos con un movimiento hacia adelante, quedando las palmas abiertas con los dedos extendidos y separados.",
-    "archivo_imagen": "imagenes/colegio_colores/examen.png",
+    "archivo_imagen": "imagenes/contexto_escolar/examen.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2460,7 +2460,7 @@
     "categoria": "contexto_escolar",
     "palabra": "folder",
     "descripcion": "Uniendo las palmas de las manos, configurar “F” con la mano derecha y realizar un movimiento de separación.",
-    "archivo_imagen": "imagenes/colegio_colores/folder.png",
+    "archivo_imagen": "imagenes/contexto_escolar/folder.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2468,7 +2468,7 @@
     "categoria": "contexto_escolar",
     "palabra": "geografia",
     "descripcion": "Configurar “G” con ambas manos realizando un movimiento circular completo de la derecha alrededor de la mano izquierda.",
-    "archivo_imagen": "imagenes/colegio_colores/geografia.png",
+    "archivo_imagen": "imagenes/contexto_escolar/geografia.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2476,7 +2476,7 @@
     "categoria": "contexto_escolar",
     "palabra": "goma",
     "descripcion": "Presionar con el pulgar extendido, los demás dedos flexionados sobre la palma de la mano izquierda.",
-    "archivo_imagen": "imagenes/colegio_colores/goma.png",
+    "archivo_imagen": "imagenes/contexto_escolar/goma.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2484,7 +2484,7 @@
     "categoria": "contexto_escolar",
     "palabra": "historia",
     "descripcion": "1. Unir las yemas del dedos pulgar e índice en ambas manos los demás dedos semiflexionados. 2. Realizar un movimiento de cruce de los dedos mencionados, girando las muñecas, mientras los dedos se van uniendo y separando.",
-    "archivo_imagen": "imagenes/colegio_colores/historia.png",
+    "archivo_imagen": "imagenes/contexto_escolar/historia.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2492,7 +2492,7 @@
     "categoria": "contexto_escolar",
     "palabra": "inicial",
     "descripcion": "Configurar “I” con la mano derecha sobre el lado izquierdo del pecho.",
-    "archivo_imagen": "imagenes/colegio_colores/inicial.png",
+    "archivo_imagen": "imagenes/contexto_escolar/inicial.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2500,7 +2500,7 @@
     "categoria": "contexto_escolar",
     "palabra": "lapicero",
     "descripcion": "1. Ejecutar un movimiento presionando con el pulgar derecho la parte lateral del índice flexionado. 2. Simular acción de escribir.",
-    "archivo_imagen": "imagenes/colegio_colores/lapicero.png",
+    "archivo_imagen": "imagenes/contexto_escolar/lapicero.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2508,7 +2508,7 @@
     "categoria": "contexto_escolar",
     "palabra": "lapiz",
     "descripcion": "Con el pulgar e índice unidos simular acción de coger el lápiz y escribir.",
-    "archivo_imagen": "imagenes/colegio_colores/lapiz.png",
+    "archivo_imagen": "imagenes/contexto_escolar/lapiz.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2516,7 +2516,7 @@
     "categoria": "contexto_escolar",
     "palabra": "lenguaje",
     "descripcion": "Configurar “L” con ambas manos realizando un movimiento hacia los lados girando las muñecas.",
-    "archivo_imagen": "imagenes/colegio_colores/lenguaje.png",
+    "archivo_imagen": "imagenes/contexto_escolar/lenguaje.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2524,7 +2524,7 @@
     "categoria": "contexto_escolar",
     "palabra": "libreta",
     "descripcion": "Configurar “L” con ambas manos realizar un movimiento hacia los lados.",
-    "archivo_imagen": "imagenes/colegio_colores/libreta.png",
+    "archivo_imagen": "imagenes/contexto_escolar/libreta.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2532,7 +2532,7 @@
     "categoria": "contexto_escolar",
     "palabra": "libro",
     "descripcion": "1. Juntar ambas palmas en posición horizontal. 2. Realizar un movimiento abriendo y cerrando las palmas.",
-    "archivo_imagen": "imagenes/colegio_colores/libro.png",
+    "archivo_imagen": "imagenes/contexto_escolar/libro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2540,7 +2540,7 @@
     "categoria": "colores",
     "palabra": "marron",
     "descripcion": "Configurar “M” y realizar un movimiento circular sobre la mejilla.",
-    "archivo_imagen": "imagenes/colegio_colores/marron.png",
+    "archivo_imagen": "imagenes/colores/marron.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2548,7 +2548,7 @@
     "categoria": "contexto_escolar",
     "palabra": "matematica",
     "descripcion": "Configurar “M” con ambas manos en posición horizontal colocando la derecha sobre la mano izquierda realizar movimiento semicircular de la mano derecha hacia el lado izquierdo y de la mano izquierda hacia el lado derecho.",
-    "archivo_imagen": "imagenes/colegio_colores/matematica.png",
+    "archivo_imagen": "imagenes/contexto_escolar/matematica.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2556,7 +2556,7 @@
     "categoria": "contexto_escolar",
     "palabra": "mochila",
     "descripcion": "Simular la acción de colocarse la mochila en los hombros.",
-    "archivo_imagen": "imagenes/colegio_colores/mochila.png",
+    "archivo_imagen": "imagenes/contexto_escolar/mochila.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2564,7 +2564,7 @@
     "categoria": "colores",
     "palabra": "morado",
     "descripcion": "Configurar la seña de octubre.",
-    "archivo_imagen": "imagenes/colegio_colores/morado.png",
+    "archivo_imagen": "imagenes/colores/morado.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2572,7 +2572,7 @@
     "categoria": "contexto_escolar",
     "palabra": "mota",
     "descripcion": "Simular acción de borrar la pizarra.",
-    "archivo_imagen": "imagenes/colegio_colores/mota.png",
+    "archivo_imagen": "imagenes/contexto_escolar/mota.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2580,7 +2580,7 @@
     "categoria": "colores",
     "palabra": "negro",
     "descripcion": "Acercar a la cara la palma de la mano derecha realizando un movimiento circular.",
-    "archivo_imagen": "imagenes/colegio_colores/negro.png",
+    "archivo_imagen": "imagenes/colores/negro.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2588,7 +2588,7 @@
     "categoria": "contexto_escolar",
     "palabra": "nota",
     "descripcion": "1. Llevar la mano derecha con todos los dedos semiflexionados a la palma de la mano izquierda. 2. Extender los dedos sin retirarlos de la palma.",
-    "archivo_imagen": "imagenes/colegio_colores/nota.png",
+    "archivo_imagen": "imagenes/contexto_escolar/nota.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2596,7 +2596,7 @@
     "categoria": "contexto_escolar",
     "palabra": "papel",
     "descripcion": "Uniendo las palmas de las manos en posición horizontal, realizar un movimiento hacia la izquierda con la mano derecha sobre la palma izquierda.",
-    "archivo_imagen": "imagenes/colegio_colores/papel.png",
+    "archivo_imagen": "imagenes/contexto_escolar/papel.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2604,7 +2604,7 @@
     "categoria": "contexto_escolar",
     "palabra": "pizarra",
     "descripcion": "Diseñar con los índices la forma rectangular de la pizarra.",
-    "archivo_imagen": "imagenes/colegio_colores/pizarra.png",
+    "archivo_imagen": "imagenes/contexto_escolar/pizarra.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2612,7 +2612,7 @@
     "categoria": "colores",
     "palabra": "plomo",
     "descripcion": "Configurar la letra P sobre los labios y desplazarla con un movimiento semicircular.",
-    "archivo_imagen": "imagenes/colegio_colores/plomo.png",
+    "archivo_imagen": "imagenes/colores/plomo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2620,7 +2620,7 @@
     "categoria": "contexto_escolar",
     "palabra": "plumones",
     "descripcion": "1. Mover delante de la boca, los dedos índice, medio, anular y meñique extendidos, 2. Simular la acción de dibujar.",
-    "archivo_imagen": "imagenes/colegio_colores/plumones.png",
+    "archivo_imagen": "imagenes/contexto_escolar/plumones.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2628,7 +2628,7 @@
     "categoria": "contexto_escolar",
     "palabra": "primaria",
     "descripcion": "Configurar “P” con la mano derecha sobre el lado izquierdo del tronco.",
-    "archivo_imagen": "imagenes/colegio_colores/primaria.png",
+    "archivo_imagen": "imagenes/contexto_escolar/primaria.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2636,7 +2636,7 @@
     "categoria": "contexto_escolar",
     "palabra": "regla",
     "descripcion": "Recorrer con los dedos de la mano derecha la parte lateral del antebrazo izquierdo, desde el codo hasta la muñeca.",
-    "archivo_imagen": "imagenes/colegio_colores/regla.png",
+    "archivo_imagen": "imagenes/contexto_escolar/regla.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2644,7 +2644,7 @@
     "categoria": "colores",
     "palabra": "rojo",
     "descripcion": "Cruzar el índice y medio de la mano derecha sobre los labios con ligero movimiento hacia abajo.",
-    "archivo_imagen": "imagenes/colegio_colores/rojo.png",
+    "archivo_imagen": "imagenes/colores/rojo.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2652,7 +2652,7 @@
     "categoria": "colores",
     "palabra": "rosado",
     "descripcion": "1. Configurar la seña del color rojo. 2. Mover los dedos hacia el lado derecho.",
-    "archivo_imagen": "imagenes/colegio_colores/rosado.png",
+    "archivo_imagen": "imagenes/colores/rosado.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2660,7 +2660,7 @@
     "categoria": "contexto_escolar",
     "palabra": "secundaria",
     "descripcion": "1. Colocar el índice derecho en los labios. 2. Llevar la mano hacia el hombro izquierdo.",
-    "archivo_imagen": "imagenes/colegio_colores/secundaria.png",
+    "archivo_imagen": "imagenes/contexto_escolar/secundaria.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2668,7 +2668,7 @@
     "categoria": "contexto_escolar",
     "palabra": "tajador",
     "descripcion": "Girar el índice derecho alrededor del pulgar derecho extendido.",
-    "archivo_imagen": "imagenes/colegio_colores/tajador.png",
+    "archivo_imagen": "imagenes/contexto_escolar/tajador.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2676,7 +2676,7 @@
     "categoria": "contexto_escolar",
     "palabra": "tarea",
     "descripcion": "1. Realizar con la mano derecha un trazo en la palma izquierda. 2. Configurar la letra \"T\"",
-    "archivo_imagen": "imagenes/colegio_colores/tarea.png",
+    "archivo_imagen": "imagenes/contexto_escolar/tarea.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2684,7 +2684,7 @@
     "categoria": "contexto_escolar",
     "palabra": "tiza",
     "descripcion": "Simular acción de escribir en la pizarra.",
-    "archivo_imagen": "imagenes/colegio_colores/tiza.png",
+    "archivo_imagen": "imagenes/contexto_escolar/tiza.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2692,7 +2692,7 @@
     "categoria": "contexto_escolar",
     "palabra": "universidad",
     "descripcion": "Configurar “U” con la mano derecha sobre el lado izquierdo del tronco.",
-    "archivo_imagen": "imagenes/colegio_colores/universidad.png",
+    "archivo_imagen": "imagenes/contexto_escolar/universidad.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
@@ -2700,7 +2700,7 @@
     "categoria": "colores",
     "palabra": "verde",
     "descripcion": "Configurar “V” con la mano derecha realizando un movimiento de izquierda a derecha.",
-    "archivo_imagen": "imagenes/colegio_colores/verde.png",
+    "archivo_imagen": "imagenes/colores/verde.png",
     "fuente": "Ministerio de Educación del Perú - Guía de Lengua de Señas Peruana"
   },
   {
