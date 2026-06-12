@@ -39,6 +39,88 @@ function nombreCategoria(categoria) {
 function pluralizar(cantidad) {
   return cantidad === 1 ? "seña encontrada" : "señas encontradas";
 }
+const ORDEN_NUMEROS = new Map([
+  ["cero", 0],
+  ["uno", 1],
+  ["dos", 2],
+  ["tres", 3],
+  ["cuatro", 4],
+  ["cinco", 5],
+  ["seis", 6],
+  ["siete", 7],
+  ["ocho", 8],
+  ["nueve", 9],
+  ["diez", 10],
+  ["once", 11],
+  ["doce", 12],
+  ["trece", 13],
+  ["catorce", 14],
+  ["quince", 15],
+  ["dieciseis", 16],
+  ["diecisiete", 17],
+  ["dieciocho", 18],
+  ["diecinueve", 19],
+  ["veinte", 20],
+  ["veintiuno", 21],
+  ["veintidos", 22],
+  ["veintitres", 23],
+  ["veinticuatro", 24],
+  ["veinticinco", 25],
+  ["veintiseis", 26],
+  ["veintisiete", 27],
+  ["veintiocho", 28],
+  ["veintinueve", 29],
+  ["treinta", 30],
+]);
+
+function valorNumero(registro) {
+  const palabra = normalizar(registro.palabra)
+    .replace(/^numero\s+/, "")
+    .replace(/^nro\s+/, "")
+    .trim();
+
+  const numeroEnDigitos = palabra.match(/\d+/);
+
+  if (numeroEnDigitos) {
+    return Number(numeroEnDigitos[0]);
+  }
+
+  return ORDEN_NUMEROS.get(palabra) ?? Number.MAX_SAFE_INTEGER;
+}
+
+function ordenarRegistros(registros) {
+  return [...registros].sort((a, b) => {
+    const categoriaA = normalizar(a.categoria);
+    const categoriaB = normalizar(b.categoria);
+
+    if (categoriaA === "numeros" && categoriaB === "numeros") {
+      const numeroA = valorNumero(a);
+      const numeroB = valorNumero(b);
+
+      if (numeroA !== numeroB) {
+        return numeroA - numeroB;
+      }
+    }
+
+    const ordenCategoria = nombreCategoria(a.categoria).localeCompare(
+      nombreCategoria(b.categoria),
+      "es",
+      {
+        numeric: true,
+        sensitivity: "base",
+      },
+    );
+
+    if (ordenCategoria !== 0) {
+      return ordenCategoria;
+    }
+
+    return String(a.palabra).localeCompare(String(b.palabra), "es", {
+      numeric: true,
+      sensitivity: "base",
+    });
+  });
+}
 
 function cargarCategorias(registros) {
   const categorias = [...new Set(registros.map(({ categoria }) => categoria))]
