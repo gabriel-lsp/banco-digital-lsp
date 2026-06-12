@@ -754,3 +754,38 @@ footer {
     transition: none !important;
   }
 }
+.galeria.galeria-secuencia {
+  grid-template-columns: 1fr;
+  max-width: 1050px;
+  margin: 0 auto;
+  gap: 28px;
+}
+
+.galeria.galeria-secuencia .tarjeta {
+  border-radius: 18px;
+}
+
+.galeria.galeria-secuencia .marco-imagen {
+  aspect-ratio: auto;
+  padding: 18px;
+  background: #ffffff;
+}
+
+.galeria.galeria-secuencia .imagen-sena {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
+
+.galeria.galeria-secuencia .tarjeta-contenido {
+  padding: 18px 24px 22px;
+}
+
+.galeria.galeria-secuencia .categoria-tarjeta {
+  font-size: 0.78rem;
+}
+
+.galeria.galeria-secuencia .palabra-tarjeta {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
