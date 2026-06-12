@@ -74,6 +74,14 @@ function crearTarjeta(registro) {
   fragmento.querySelector(".palabra-tarjeta").textContent = registro.palabra;
   fragmento.querySelector(".categoria-tarjeta").textContent =
     nombreCategoria(registro.categoria);
+  const descripcion = registro.descripcion?.trim();
+const descripcionElemento = fragmento.querySelector(".descripcion-tarjeta");
+
+if (descripcion) {
+  descripcionElemento.textContent = descripcion;
+} else {
+  descripcionElemento.hidden = true;
+}
   fragmento.querySelector(".fuente-tarjeta").textContent =
     registro.fuente || "Fuente no especificada";
   tarjeta.setAttribute(
