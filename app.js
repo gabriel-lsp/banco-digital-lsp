@@ -207,12 +207,16 @@ function filtrar() {
   const categoria = elementos.categoria.value;
 
   estado.resultados = estado.registros.filter((registro) => {
-    const coincidePalabra =
-      !consulta || normalizar(registro.palabra).includes(consulta);
-    const coincideCategoria =
-      !categoria || registro.categoria === categoria;
-    return coincidePalabra && coincideCategoria;
-  });
+const filtrados = estado.registros.filter((registro) => {
+  const coincidePalabra =
+    !consulta || normalizar(registro.palabra).includes(consulta);
+  const coincideCategoria =
+    !categoria || registro.categoria === categoria;
+  return coincidePalabra && coincideCategoria;
+});
+
+estado.resultados = ordenarRegistros(filtrados);
+  
   estado.visibles = TAMANO_LOTE;
   renderizar();
 }
@@ -237,7 +241,7 @@ async function iniciar() {
     }
 
     estado.registros = datos;
-    estado.resultados = [...datos].sort(() => Math.random() - 0.5);
+    estado.resultados = ordenarRegistros(datos);
     cargarCategorias(datos);
     renderizar();
   } catch (error) {
