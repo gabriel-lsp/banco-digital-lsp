@@ -135,6 +135,15 @@ select:focus-visible {
   letter-spacing: 0.05em;
 }
 
+.enlaces-superiores {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.enlace-inicio,
 .enlace-creditos {
   padding: 9px 14px;
   color: var(--blanco);
@@ -145,7 +154,9 @@ select:focus-visible {
   text-decoration: none;
 }
 
+.enlace-inicio:hover,
 .enlace-creditos:hover,
+.enlace-inicio.activo,
 .enlace-creditos.activo {
   color: var(--azul-900);
   background: var(--blanco);
@@ -754,6 +765,7 @@ footer {
     transition: none !important;
   }
 }
+
 .galeria.galeria-secuencia {
   grid-template-columns: 1fr;
   max-width: 1050px;
@@ -789,6 +801,7 @@ footer {
 .galeria.galeria-secuencia .palabra-tarjeta {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
+
 .pestanas-secuencias {
   display: flex;
   flex-wrap: wrap;
