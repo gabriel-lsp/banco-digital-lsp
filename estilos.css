@@ -789,3 +789,53 @@ footer {
 .galeria.galeria-secuencia .palabra-tarjeta {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
+.pestanas-secuencias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 14px;
+  padding: 14px;
+  background: #eef7f4;
+  border: 1px solid #c7ded8;
+  border-radius: 18px;
+}
+
+.pestana-secuencia {
+  border: 1px solid #b9d5ce;
+  background: #ffffff;
+  color: #174b57;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.92rem;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(16, 42, 67, 0.08);
+}
+
+.pestana-secuencia:hover {
+  background: #f7fbfa;
+  border-color: #86b9ad;
+}
+
+.pestana-secuencia.activa {
+  background: #0f5f5c;
+  color: #ffffff;
+  border-color: #0f5f5c;
+}
+
+.pestana-secuencia:focus-visible {
+  outline: 3px solid #f6c453;
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .pestanas-secuencias {
+    flex-direction: column;
+  }
+
+  .pestana-secuencia {
+    width: 100%;
+    text-align: center;
+  }
+}
