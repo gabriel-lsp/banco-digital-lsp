@@ -170,6 +170,7 @@ function crearTarjeta(item) {
 
   if (esSecuencia(item)) {
     categoria.textContent = "none";
+    categoria.hidden = true;
   } else {
     categoria.textContent = formatearCategoria(item.categoria);
   }
