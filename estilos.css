@@ -789,17 +789,3 @@ footer {
 .galeria.galeria-secuencia .palabra-tarjeta {
   font-size: clamp(1.6rem, 3vw, 2.2rem);
 }
-.nota-secuencia {
-  margin: 18px 0 0;
-  padding: 14px 16px;
-  color: var(--azul-900);
-  background: var(--verde-100);
-  border: 1px solid rgba(31, 106, 90, 0.24);
-  border-radius: 14px;
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.nota-secuencia[hidden] {
-  display: none;
-}
