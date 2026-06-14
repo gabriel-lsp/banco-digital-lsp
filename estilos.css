@@ -838,30 +838,4 @@ footer {
     width: 100%;
     text-align: center;
   }
-  .boton-inicio,
-.boton-creditos {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 16px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  border: 1px solid #1f4f8f;
-  background: #ffffff;
-  color: #1f4f8f;
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-.boton-inicio:hover,
-.boton-creditos:hover {
-  background: #1f4f8f;
-  color: #ffffff;
-  transform: translateY(-1px);
-}
-
-.boton-inicio {
-  margin-right: 8px;
-}
 }
