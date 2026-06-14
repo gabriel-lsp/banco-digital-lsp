@@ -1,310 +1,327 @@
 "use strict";
 
-const RUTA_DATOS = "datos/diccionario_lsp.json?v=4";
-const TAMANO_LOTE = 8;
+const LIMITE_INICIAL = 8;
 
-const estado = {
-  registros: [],
-  resultados: [],
-  visibles: TAMANO_LOTE,
+const SECUENCIAS = [
+  "padre nuestro",
+  "ave maria",
+  "himno nacional"
+];
+
+const NOMBRES_SECUENCIAS = {
+  "padre nuestro": "Padre Nuestro",
+  "ave maria": "Ave María",
+  "himno nacional": "Himno Nacional"
 };
 
 const elementos = {
   busqueda: document.querySelector("#busqueda"),
   categoria: document.querySelector("#categoria"),
-  limpiar: document.querySelector("#limpiar"),
   contador: document.querySelector("#contador"),
   mostrando: document.querySelector("#mostrando"),
+  estado: document.querySelector("#estado"),
   galeria: document.querySelector("#galeria"),
   cargarMas: document.querySelector("#cargar-mas"),
-  estadoCarga: document.querySelector("#estado"),
+  limpiar: document.querySelector("#limpiar"),
   plantilla: document.querySelector("#plantilla-tarjeta"),
+  pestanasSecuencia: [...document.querySelectorAll(".pestana-secuencia")]
 };
 
-function normalizar(valor) {
-  return String(valor ?? "")
+let banco = [];
+let resultadosActuales = [];
+let cantidadVisible = LIMITE_INICIAL;
+let secuenciaActiva = "";
+
+function normalizarTexto(texto) {
+  return String(texto || "")
+    .toLocaleLowerCase("es")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .toLocaleLowerCase("es")
-    .trim();
-}
-
-function nombreCategoria(categoria) {
-  return String(categoria)
-    .replaceAll("_", " ")
+    .replace(/[_-]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
 }
 
-function pluralizar(cantidad) {
-  return cantidad === 1 ? "seña encontrada" : "señas encontradas";
+function formatearCategoria(categoria) {
+  return String(categoria || "")
+    .replace(/[_-]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\b\w/g, (letra) => letra.toLocaleUpperCase("es"));
 }
 
-function barajarRegistros(registros) {
-  return [...registros].sort(() => Math.random() - 0.5);
+function obtenerCategoriaNormalizada(item) {
+  return normalizarTexto(item.categoria);
 }
 
-function esCategoriaSecuencial(categoria) {
-  const categoriasSecuenciales = [
-    "padre_nuestro",
-    "ave_maria",
-    "himno_nacional",
-  ];
-
-  return categoriasSecuenciales.includes(normalizar(categoria));
+function esSecuencia(item) {
+  const categoria = obtenerCategoriaNormalizada(item);
+  return SECUENCIAS.includes(categoria);
 }
 
-const ORDEN_NUMEROS = new Map([
-  ["cero", 0],
-  ["uno", 1],
-  ["dos", 2],
-  ["tres", 3],
-  ["cuatro", 4],
-  ["cinco", 5],
-  ["seis", 6],
-  ["siete", 7],
-  ["ocho", 8],
-  ["nueve", 9],
-  ["diez", 10],
-  ["once", 11],
-  ["doce", 12],
-  ["trece", 13],
-  ["catorce", 14],
-  ["quince", 15],
-  ["dieciseis", 16],
-  ["diecisiete", 17],
-  ["dieciocho", 18],
-  ["diecinueve", 19],
-  ["veinte", 20],
-  ["veintiuno", 21],
-  ["veintidos", 22],
-  ["veintitres", 23],
-  ["veinticuatro", 24],
-  ["veinticinco", 25],
-  ["veintiseis", 26],
-  ["veintisiete", 27],
-  ["veintiocho", 28],
-  ["veintinueve", 29],
-  ["treinta", 30],
-]);
-
-function valorNumero(registro) {
-  const palabra = normalizar(registro.palabra)
-    .replace(/^numero\s+/, "")
-    .replace(/^nro\s+/, "")
-    .trim();
-
-  const numeroEnDigitos = palabra.match(/\d+/);
-
-  if (numeroEnDigitos) {
-    return Number(numeroEnDigitos[0]);
-  }
-
-  return ORDEN_NUMEROS.get(palabra) ?? Number.MAX_SAFE_INTEGER;
+function coincideSecuencia(item, secuencia) {
+  return obtenerCategoriaNormalizada(item) === normalizarTexto(secuencia);
 }
 
-function ordenarRegistros(registros) {
-  return [...registros].sort((a, b) => {
-    const categoriaA = normalizar(a.categoria);
-    const categoriaB = normalizar(b.categoria);
+function obtenerTextoConsultable(item) {
+  return normalizarTexto(
+    `${item.palabra || ""} ${item.categoria || ""} ${item.descripcion || ""}`
+  );
+}
 
-    if (categoriaA === "numeros" && categoriaB === "numeros") {
-      const numeroA = valorNumero(a);
-      const numeroB = valorNumero(b);
+function ordenarResultados(lista) {
+  return [...lista].sort((a, b) => {
+    const categoriaA = formatearCategoria(a.categoria);
+    const categoriaB = formatearCategoria(b.categoria);
+    const palabraA = a.palabra || "";
+    const palabraB = b.palabra || "";
 
-      if (numeroA !== numeroB) {
-        return numeroA - numeroB;
-      }
-    }
-
-    const ordenCategoria = nombreCategoria(a.categoria).localeCompare(
-      nombreCategoria(b.categoria),
-      "es",
-      {
-        numeric: true,
-        sensitivity: "base",
-      },
-    );
-
-    if (ordenCategoria !== 0) {
-      return ordenCategoria;
-    }
-
-    return String(a.palabra).localeCompare(String(b.palabra), "es", {
+    const comparacionCategoria = categoriaA.localeCompare(categoriaB, "es", {
       numeric: true,
-      sensitivity: "base",
+      sensitivity: "base"
+    });
+
+    if (comparacionCategoria !== 0) {
+      return comparacionCategoria;
+    }
+
+    return palabraA.localeCompare(palabraB, "es", {
+      numeric: true,
+      sensitivity: "base"
     });
   });
 }
 
-function cargarCategorias(registros) {
-  const categorias = [...new Set(registros.map(({ categoria }) => categoria))]
-    .filter(Boolean)
-    .sort((a, b) =>
-      nombreCategoria(a).localeCompare(nombreCategoria(b), "es", {
-        sensitivity: "base",
-      }),
-    );
+function obtenerCategorias() {
+  const categorias = banco
+    .filter((item) => !esSecuencia(item))
+    .map((item) => item.categoria)
+    .filter(Boolean);
 
-  const fragmento = document.createDocumentFragment();
-
-  for (const categoria of categorias) {
-    const opcion = document.createElement("option");
-    opcion.value = categoria;
-    opcion.textContent = nombreCategoria(categoria);
-    fragmento.append(opcion);
-  }
-
-  elementos.categoria.append(fragmento);
+  return [...new Set(categorias)].sort((a, b) =>
+    formatearCategoria(a).localeCompare(formatearCategoria(b), "es", {
+      numeric: true,
+      sensitivity: "base"
+    })
+  );
 }
 
-function crearTarjeta(registro) {
-  const fragmento = elementos.plantilla.content.cloneNode(true);
-  const tarjeta = fragmento.querySelector(".tarjeta");
-  const imagen = fragmento.querySelector(".imagen-sena");
-  const descripcionElemento = fragmento.querySelector(".descripcion-tarjeta");
+function cargarCategorias() {
+  elementos.categoria.innerHTML = "";
 
-  imagen.src = registro.archivo_imagen;
-  imagen.alt = `Seña para la palabra ${registro.palabra}`;
+  const opcionTodas = document.createElement("option");
+  opcionTodas.value = "";
+  opcionTodas.textContent = "Todas las categorías";
+  elementos.categoria.appendChild(opcionTodas);
 
-  imagen.addEventListener("error", () => {
-    imagen.classList.add("error-imagen");
-    imagen.alt = `Imagen no disponible para ${registro.palabra}`;
+  obtenerCategorias().forEach((categoria) => {
+    const opcion = document.createElement("option");
+    opcion.value = categoria;
+    opcion.textContent = formatearCategoria(categoria);
+    elementos.categoria.appendChild(opcion);
+  });
+}
+
+function actualizarPestanasSecuencia() {
+  elementos.pestanasSecuencia.forEach((boton) => {
+    const activa = normalizarTexto(boton.dataset.secuencia) === secuenciaActiva;
+    boton.classList.toggle("activa", activa);
+    boton.setAttribute("aria-pressed", String(activa));
+  });
+}
+
+function obtenerResultados() {
+  const consulta = normalizarTexto(elementos.busqueda.value);
+  const categoriaSeleccionada = elementos.categoria.value;
+
+  const resultados = banco.filter((item) => {
+    const coincideBusqueda =
+      consulta === "" || obtenerTextoConsultable(item).includes(consulta);
+
+    if (secuenciaActiva !== "") {
+      return coincideSecuencia(item, secuenciaActiva) && coincideBusqueda;
+    }
+
+    const coincideCategoria =
+      categoriaSeleccionada === "" || item.categoria === categoriaSeleccionada;
+
+    return !esSecuencia(item) && coincideCategoria && coincideBusqueda;
   });
 
-  fragmento.querySelector(".palabra-tarjeta").textContent = registro.palabra;
+  return ordenarResultados(resultados);
+}
 
-  fragmento.querySelector(".categoria-tarjeta").textContent =
-    nombreCategoria(registro.categoria);
+function limpiarGaleria() {
+  elementos.galeria.innerHTML = "";
+}
 
-  const descripcion = registro.descripcion?.trim();
+function crearTarjeta(item) {
+  const tarjeta = elementos.plantilla.content.firstElementChild.cloneNode(true);
 
-  if (descripcionElemento) {
-    if (descripcion) {
-      descripcionElemento.textContent = descripcion;
-    } else {
-      descripcionElemento.hidden = true;
-    }
+  const imagen = tarjeta.querySelector(".imagen-sena");
+  const categoria = tarjeta.querySelector(".categoria-tarjeta");
+  const palabra = tarjeta.querySelector(".palabra-tarjeta");
+  const fuente = tarjeta.querySelector(".fuente-tarjeta");
+
+  imagen.src = item.archivo_imagen;
+  imagen.alt = item.palabra
+    ? `Representación visual de ${item.palabra} en Lengua de Señas Peruana`
+    : "Representación visual en Lengua de Señas Peruana";
+
+  if (esSecuencia(item)) {
+    categoria.textContent = "Secuencia completa en LSP";
+  } else {
+    categoria.textContent = formatearCategoria(item.categoria);
   }
 
-  fragmento.querySelector(".fuente-tarjeta").textContent =
-    registro.fuente || "Fuente no especificada";
+  palabra.textContent = item.palabra || "Contenido sin título";
 
-  tarjeta.setAttribute(
-    "aria-label",
-    `${registro.palabra}, categoría ${nombreCategoria(registro.categoria)}`,
-  );
+  if (fuente) {
+    fuente.textContent = "";
+    fuente.hidden = true;
+  }
 
-  return fragmento;
+  return tarjeta;
+}
+
+function actualizarResumen() {
+  const total = resultadosActuales.length;
+  const visible = Math.min(cantidadVisible, total);
+
+  if (secuenciaActiva !== "") {
+    const nombre = NOMBRES_SECUENCIAS[secuenciaActiva] || formatearCategoria(secuenciaActiva);
+
+    elementos.contador.textContent = total === 1
+      ? `${nombre}: 1 parte encontrada`
+      : `${nombre}: ${total} partes encontradas`;
+
+    elementos.cargarMas.textContent = "Mostrar más partes";
+  } else {
+    elementos.contador.textContent = total === 1
+      ? "1 seña encontrada"
+      : `${total} señas encontradas`;
+
+    elementos.cargarMas.textContent = "Mostrar más señas";
+  }
+
+  elementos.mostrando.textContent = total > 0
+    ? `Mostrando ${visible} de ${total}`
+    : "";
+
+  elementos.cargarMas.hidden = visible >= total;
 }
 
 function renderizar() {
-  elementos.galeria.replaceChildren();
+  resultadosActuales = obtenerResultados();
 
-  const categoriaActual = elementos.categoria.value;
+  limpiarGaleria();
 
-  elementos.galeria.classList.toggle(
-    "galeria-secuencia",
-    esCategoriaSecuencial(categoriaActual),
-  );
+  if (resultadosActuales.length === 0) {
+    elementos.estado.hidden = false;
 
-  const cantidad = estado.resultados.length;
-  const limite = Math.min(estado.visibles, cantidad);
+    elementos.estado.textContent = secuenciaActiva !== ""
+      ? "No se encontraron partes de esta secuencia con los criterios indicados."
+      : "No se encontraron señas con los criterios indicados.";
+
+    elementos.cargarMas.hidden = true;
+    elementos.mostrando.textContent = "";
+    elementos.contador.textContent = "Sin resultados";
+    return;
+  }
+
+  elementos.estado.hidden = true;
+
   const fragmento = document.createDocumentFragment();
+  const visibles = resultadosActuales.slice(0, cantidadVisible);
 
-  for (const registro of estado.resultados.slice(0, limite)) {
-    fragmento.append(crearTarjeta(registro));
-  }
-
-  elementos.galeria.append(fragmento);
-
-  elementos.contador.textContent = `${cantidad.toLocaleString("es-PE")} ${pluralizar(cantidad)}`;
-
-  elementos.mostrando.textContent =
-    cantidad > 0
-      ? `Mostrando ${limite.toLocaleString("es-PE")} de ${cantidad.toLocaleString("es-PE")}`
-      : "";
-
-  elementos.cargarMas.hidden = limite >= cantidad;
-
-  if (cantidad === 0) {
-    elementos.estadoCarga.hidden = false;
-    elementos.estadoCarga.classList.remove("error");
-    elementos.estadoCarga.textContent =
-      "No encontramos señas con esos criterios. Prueba otra palabra o categoría.";
-  } else {
-    elementos.estadoCarga.hidden = true;
-  }
-}
-
-function filtrar() {
-  const consulta = normalizar(elementos.busqueda.value);
-  const categoria = elementos.categoria.value;
-
-  const filtrados = estado.registros.filter((registro) => {
-    const coincidePalabra =
-      !consulta || normalizar(registro.palabra).includes(consulta);
-
-    const coincideCategoria =
-      !categoria || registro.categoria === categoria;
-
-    return coincidePalabra && coincideCategoria;
+  visibles.forEach((item) => {
+    fragmento.appendChild(crearTarjeta(item));
   });
 
-  if (!consulta && !categoria) {
-    estado.resultados = barajarRegistros(filtrados);
-  } else {
-    estado.resultados = ordenarRegistros(filtrados);
-  }
+  elementos.galeria.appendChild(fragmento);
+  actualizarResumen();
+}
 
-  estado.visibles = TAMANO_LOTE;
+function activarSecuencia(secuencia) {
+  secuenciaActiva = normalizarTexto(secuencia);
+  elementos.categoria.value = "";
+  cantidadVisible = LIMITE_INICIAL;
+
+  actualizarPestanasSecuencia();
   renderizar();
 }
 
-function limpiarFiltros() {
+function limpiarBusqueda() {
   elementos.busqueda.value = "";
   elementos.categoria.value = "";
-  filtrar();
+  secuenciaActiva = "";
+  cantidadVisible = LIMITE_INICIAL;
+
+  actualizarPestanasSecuencia();
+  renderizar();
   elementos.busqueda.focus();
 }
 
-async function iniciar() {
+function mostrarMas() {
+  cantidadVisible += LIMITE_INICIAL;
+  renderizar();
+}
+
+async function cargarBanco() {
   try {
-    const respuesta = await fetch(RUTA_DATOS);
+    elementos.estado.hidden = false;
+    elementos.estado.textContent = "Preparando el banco de señas…";
+
+    const respuesta = await fetch("datos/diccionario_lsp.json");
 
     if (!respuesta.ok) {
-      throw new Error(`No se pudieron cargar los datos (${respuesta.status}).`);
+      throw new Error(`Error HTTP ${respuesta.status}`);
     }
 
     const datos = await respuesta.json();
 
     if (!Array.isArray(datos)) {
-      throw new Error("El archivo de datos no tiene el formato esperado.");
+      throw new TypeError("El archivo diccionario_lsp.json debe contener una lista.");
     }
 
-    estado.registros = datos;
-    estado.resultados = barajarRegistros(datos);
+    banco = datos;
 
-    cargarCategorias(datos);
+    cargarCategorias();
+    actualizarPestanasSecuencia();
     renderizar();
   } catch (error) {
-    console.error(error);
+    console.error("No fue posible cargar el banco:", error);
+
+    elementos.estado.hidden = false;
+    elementos.estado.textContent =
+      "No fue posible cargar el banco. Verifica que el archivo datos/diccionario_lsp.json esté disponible y que la plataforma se abra desde GitHub Pages o un servidor local.";
 
     elementos.contador.textContent = "Datos no disponibles";
-    elementos.estadoCarga.hidden = false;
-    elementos.estadoCarga.classList.add("error");
-    elementos.estadoCarga.textContent =
-      "No fue posible cargar el banco. Verifica que el archivo datos/diccionario_lsp.json esté disponible y que la plataforma se abra desde GitHub Pages o un servidor local.";
+    elementos.mostrando.textContent = "";
+    elementos.cargarMas.hidden = true;
   }
 }
 
-elementos.busqueda.addEventListener("input", filtrar);
-elementos.categoria.addEventListener("change", filtrar);
-elementos.limpiar.addEventListener("click", limpiarFiltros);
-
-elementos.cargarMas.addEventListener("click", () => {
-  estado.visibles += TAMANO_LOTE;
+elementos.busqueda.addEventListener("input", () => {
+  cantidadVisible = LIMITE_INICIAL;
   renderizar();
 });
 
-iniciar();
+elementos.categoria.addEventListener("change", () => {
+  secuenciaActiva = "";
+  cantidadVisible = LIMITE_INICIAL;
+
+  actualizarPestanasSecuencia();
+  renderizar();
+});
+
+elementos.limpiar.addEventListener("click", limpiarBusqueda);
+elementos.cargarMas.addEventListener("click", mostrarMas);
+
+elementos.pestanasSecuencia.forEach((boton) => {
+  boton.addEventListener("click", () => {
+    activarSecuencia(boton.dataset.secuencia);
+  });
+});
+
+cargarBanco();
