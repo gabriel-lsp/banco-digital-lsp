@@ -169,7 +169,7 @@ function crearTarjeta(item) {
     : "Representación visual en Lengua de Señas Peruana";
 
   if (esSecuencia(item)) {
-    categoria.textContent = "Secuencia completa en LSP";
+    categoria.textContent = "none";
   } else {
     categoria.textContent = formatearCategoria(item.categoria);
   }
