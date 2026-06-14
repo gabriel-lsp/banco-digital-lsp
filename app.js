@@ -15,7 +15,6 @@ const elementos = {
   limpiar: document.querySelector("#limpiar"),
   contador: document.querySelector("#contador"),
   mostrando: document.querySelector("#mostrando"),
-  notaSecuencia: document.querySelector("#nota-secuencia"),
   galeria: document.querySelector("#galeria"),
   cargarMas: document.querySelector("#cargar-mas"),
   estadoCarga: document.querySelector("#estado"),
@@ -202,17 +201,12 @@ function crearTarjeta(registro) {
 function renderizar() {
   elementos.galeria.replaceChildren();
 
-const categoriaActual = elementos.categoria.value;
-const categoriaEsSecuencial = esCategoriaSecuencial(categoriaActual);
+  const categoriaActual = elementos.categoria.value;
 
-elementos.galeria.classList.toggle(
-  "galeria-secuencia",
-  categoriaEsSecuencial,
-);
-
-if (elementos.notaSecuencia) {
-  elementos.notaSecuencia.hidden = !categoriaEsSecuencial;
-}
+  elementos.galeria.classList.toggle(
+    "galeria-secuencia",
+    esCategoriaSecuencial(categoriaActual),
+  );
 
   const cantidad = estado.resultados.length;
   const limite = Math.min(estado.visibles, cantidad);
