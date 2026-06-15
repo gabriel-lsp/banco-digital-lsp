@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Versión compacta para importar a Canva Web del portal de recursos accesibles CREBE Ucayali.">
+  <title>Recursos accesibles CREBE Ucayali - Versión Canva</title>
+  <style>
+    :root {
+      --azul: #073b78;
+      --azul-oscuro: #052b5c;
+      --turquesa: #009c9a;
+      --verde: #4f9f45;
+      --morado: #7462c7;
+      --naranja: #ed8b00;
+      --celeste: #edf8ff;
+      --texto: #26354d;
+      --blanco: #ffffff;
+      --sombra: 0 12px 28px rgba(7, 59, 120, 0.13);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      background: linear-gradient(135deg, #ffffff 0%, #f2fbff 48%, #eaf8f5 100%);
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .pagina {
+      width: min(1380px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 18px;
+    }
+
+    .barra {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 18px;
+    }
+
+    .marca {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .logo {
+      display: grid;
+      place-items: center;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ffffff, #e9f8f7);
+      border: 2px solid rgba(0, 156, 154, 0.25);
+      box-shadow: var(--sombra);
+      color: var(--azul);
+      font-weight: 900;
+      font-size: 15px;
+      text-align: center;
+      line-height: 1.05;
+    }
+
+    .marca strong {
+      display: block;
+      color: var(--azul);
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    .marca span {
+      display: block;
+      color: var(--turquesa);
+      font-size: 18px;
+      font-weight: 800;
+      margin-top: 2px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 26px;
+      color: var(--azul-oscuro);
+      font-weight: 800;
+      font-size: 16px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 26px;
+      padding: 32px;
+      border-radius: 28px;
+      background: rgba(255, 255, 255, 0.86);
+      box-shadow: var(--sombra);
+      border: 1px solid rgba(7, 59, 120, 0.08);
+    }
+
+    .etiqueta {
+      display: inline-block;
+      margin: 0 0 12px;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: rgba(0, 156, 154, 0.12);
+      color: var(--turquesa);
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      color: var(--azul);
+      font-size: 70px;
+      line-height: 0.96;
+      letter-spacing: -3px;
+    }
+
+    .subtitulo {
+      margin: 18px 0 8px;
+      color: var(--turquesa);
+      font-size: 24px;
+      line-height: 1.2;
+      font-weight: 900;
+    }
+
+    .descripcion {
+      max-width: 640px;
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .botones {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+
+    .boton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 14px 24px;
+      border-radius: 15px;
+      font-weight: 900;
+      font-size: 17px;
+    }
+
+    .principal {
+      color: #ffffff;
+      background: var(--turquesa);
+    }
+
+    .secundario {
+      color: var(--turquesa);
+      background: #ffffff;
+      border: 2px solid rgba(0, 156, 154, 0.45);
+    }
+
+    .ilustracion {
+      position: relative;
+      min-height: 350px;
+      border-radius: 24px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at center, rgba(255,255,255,0.95) 0 3px, transparent 4px) 0 0 / 24px 24px,
+        linear-gradient(135deg, rgba(0, 156, 154, 0.15), rgba(7, 59, 120, 0.10));
+      display: grid;
+      place-items: center;
+    }
+
+    .globo {
+      position: absolute;
+      display: grid;
+      place-items: center;
+      width: 68px;
+      height: 68px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.78);
+      box-shadow: var(--sombra);
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .g1 { top: 34px; left: 44px; color: var(--turquesa); }
+    .g2 { top: 50px; right: 44px; color: var(--morado); }
+    .g3 { bottom: 36px; left: 54px; color: var(--verde); }
+
+    .familia {
+      width: 92%;
+      max-width: 570px;
+      filter: drop-shadow(0 16px 20px rgba(7, 59, 120, 0.16));
+    }
+
+    .modulos {
+      margin-top: 18px;
+    }
+
+    .modulos h2 {
+      margin: 0 0 14px;
+      text-align: center;
+      color: var(--azul);
+      font-size: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 12px;
+    }
+
+    .card {
+      min-height: 138px;
+      padding: 16px 14px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.92);
+      box-shadow: 0 10px 22px rgba(7, 59, 120, 0.10);
+      border: 1px solid rgba(7, 59, 120, 0.08);
+      text-align: center;
+    }
+
+    .icono {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 9px;
+      border-radius: 15px;
+      font-weight: 900;
+      color: #ffffff;
+      font-size: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.15;
+    }
+
+    .card p {
+      margin: 6px 0 0;
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .lsp { color: var(--turquesa); }
+    .braille { color: var(--morado); }
+    .materiales { color: var(--verde); }
+    .juegos { color: var(--naranja); }
+    .capacitaciones { color: #0b72c9; }
+    .visitas { color: var(--turquesa); }
+
+    .bg-lsp { background: var(--turquesa); }
+    .bg-braille { background: var(--morado); }
+    .bg-materiales { background: var(--verde); }
+    .bg-juegos { background: var(--naranja); }
+    .bg-capacitaciones { background: #0b72c9; }
+    .bg-visitas { background: var(--turquesa); }
+
+    .cierre {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .sobre,
+    .accesos {
+      padding: 18px 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(7, 59, 120, 0.08);
+      box-shadow: 0 10px 22px rgba(7, 59, 120, 0.09);
+    }
+
+    .sobre h2,
+    .accesos h2 {
+      margin: 0 0 8px;
+      color: var(--turquesa);
+      font-size: 22px;
+    }
+
+    .sobre p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.45;
+    }
+
+    .pastillas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pastilla {
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: #f7fbff;
+      border: 1px solid rgba(7, 59, 120, 0.16);
+      color: var(--azul);
+      font-weight: 800;
+      font-size: 13px;
+    }
+
+    footer {
+      margin-top: 16px;
+      padding: 14px 20px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--azul-oscuro), var(--azul));
+      color: #ffffff;
+      text-align: center;
+      font-size: 15px;
+      line-height: 1.45;
+    }
+
+    footer p { margin: 2px 0; }
+
+    @media (max-width: 1100px) {
+      h1 { font-size: 56px; }
+      .grid { grid-template-columns: repeat(3, 1fr); }
+      .hero { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="pagina">
+    <header class="barra">
+      <div class="marca">
+        <div class="logo">CREBE<br>Ucayali</div>
+        <div>
+          <strong>CREBE "Señor de los Milagros"</strong>
+          <span>Ucayali</span>
+        </div>
+      </div>
+      <nav class="menu" aria-label="Navegación visual">
+        <a href="https://crebeucayali.weebly.com/">Inicio</a>
+        <a href="https://gabriel-lsp.github.io/banco-digital-lsp/">Banco LSP</a>
+        <a href="https://gabriel-lsp.github.io/banco-digital-lsp/teoria.html">Teoría LSP</a>
+        <a href="https://gabriel-lsp.github.io/banco-digital-lsp/contacto.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="etiqueta">Portal educativo accesible</p>
+          <h1>Recursos accesibles CREBE Ucayali</h1>
+          <p class="subtitulo">Herramientas digitales para fortalecer la inclusión educativa</p>
+          <p class="descripcion">Banco Digital LSP, Braille, materiales educativos, juegos accesibles y herramientas de apoyo pedagógico para docentes, familias y estudiantes.</p>
+          <div class="botones">
+            <a class="boton principal" href="https://gabriel-lsp.github.io/banco-digital-lsp/">Ingresar al Banco Digital LSP</a>
+            <a class="boton secundario" href="#recursos">Ver recursos</a>
+          </div>
+        </div>
+
+        <div class="ilustracion">
+          <div class="globo g1">LSP</div>
+          <div class="globo g2">BR</div>
+          <div class="globo g3">ED</div>
+          <svg class="familia" viewBox="0 0 720 420" role="img" aria-label="Ilustración de inclusión educativa">
+            <defs>
+              <linearGradient id="azulverde" x1="0" x2="1" y1="0" y2="1">
+                <stop offset="0" stop-color="#009c9a"/>
+                <stop offset="1" stop-color="#073b78"/>
+              </linearGradient>
+            </defs>
+            <ellipse cx="360" cy="350" rx="300" ry="42" fill="#d9eaf8"/>
+            <circle cx="190" cy="110" r="50" fill="#ffd7bc"/>
+            <path d="M120 336c12-92 35-150 78-150s72 58 86 150z" fill="#009c9a"/>
+            <path d="M146 100c20-52 92-48 106 5 7 28-4 50-18 68-19-14-42-19-75-10-21-17-25-39-13-63z" fill="#654030"/>
+            <path d="M86 245c-15-36-1-67 29-79" fill="none" stroke="#ffd0ad" stroke-width="18" stroke-linecap="round"/>
+            <path d="M115 166l20-33M115 166l-28-18M115 166l-4-38" fill="none" stroke="#ffd0ad" stroke-width="12" stroke-linecap="round"/>
+            <circle cx="300" cy="195" r="38" fill="#ffd0ad"/>
+            <path d="M250 338c8-82 29-133 69-133s63 52 74 133z" fill="#0b72c9"/>
+            <path d="M258 186c8-40 62-54 88-20 10 14 12 34 9 52-28-25-56-27-97-32z" fill="#202a44"/>
+            <rect x="238" y="258" width="166" height="96" rx="16" fill="#ffffff" stroke="#bdd0e5" stroke-width="4"/>
+            <g fill="none" stroke="#ed8b00" stroke-width="6" stroke-linecap="round">
+              <path d="M272 288v34M296 286v35M320 292v30M344 286v35"/>
+              <path d="M272 305h74"/>
+            </g>
+            <circle cx="500" cy="112" r="48" fill="#ffd7bc"/>
+            <path d="M430 336c10-85 31-140 71-140s66 54 80 140z" fill="#4f9f45"/>
+            <path d="M458 84c19-41 82-36 92 8 7 30-5 50-17 67-18-16-40-23-70-16-17-18-16-39-5-59z" fill="#202a44"/>
+            <rect x="424" y="198" width="148" height="86" rx="14" fill="#ffffff" stroke="#bdd0e5" stroke-width="4"/>
+            <g fill="#4f9f45">
+              <circle cx="454" cy="226" r="8"/><circle cx="488" cy="226" r="8"/><circle cx="522" cy="226" r="8"/>
+              <circle cx="454" cy="256" r="8"/><circle cx="488" cy="256" r="8"/><circle cx="522" cy="256" r="8"/>
+            </g>
+            <circle cx="600" cy="218" r="39" fill="#ffd0ad"/>
+            <path d="M550 350c10-58 25-98 61-98s56 39 66 98z" fill="#ed8b00"/>
+            <path d="M562 204c18-36 72-31 84 8 5 16 2 31-7 47-22-17-45-19-79-8-8-19-8-34 2-47z" fill="#3b2f36"/>
+            <rect x="558" y="292" width="112" height="54" rx="12" fill="#e9f6e7" stroke="#84bd7b" stroke-width="4"/>
+            <g fill="#7462c7">
+              <circle cx="586" cy="313" r="5"/><circle cx="608" cy="313" r="5"/><circle cx="630" cy="313" r="5"/>
+              <circle cx="586" cy="330" r="5"/><circle cx="608" cy="330" r="5"/><circle cx="630" cy="330" r="5"/>
+            </g>
+            <g fill="url(#azulverde)" opacity="0.26">
+              <path d="M55 352c24-42 43-68 72-96-8 48-25 82-72 96z"/>
+              <path d="M660 352c-35-48-62-75-96-96 12 48 38 82 96 96z"/>
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section id="recursos" class="modulos">
+        <h2>Módulos principales</h2>
+        <div class="grid">
+          <article class="card"><div class="icono bg-lsp">LSP</div><h3 class="lsp">Banco LSP</h3><p>Consulta de señas por categoría.</p></article>
+          <article class="card"><div class="icono bg-braille">BR</div><h3 class="braille">Banco Braille</h3><p>Letras, signos y actividades.</p></article>
+          <article class="card"><div class="icono bg-materiales">ME</div><h3 class="materiales">Materiales educativos</h3><p>Fichas, guías y recursos.</p></article>
+          <article class="card"><div class="icono bg-juegos">JA</div><h3 class="juegos">Juegos accesibles</h3><p>Memoria, secuencias y dinámicas.</p></article>
+          <article class="card"><div class="icono bg-capacitaciones">CA</div><h3 class="capacitaciones">Capacitaciones</h3><p>Talleres y recursos formativos.</p></article>
+          <article class="card"><div class="icono bg-visitas">RV</div><h3 class="visitas">Registro de visitas</h3><p>Formulario y seguimiento.</p></article>
+        </div>
+      </section>
+
+      <section class="cierre">
+        <div class="sobre">
+          <h2>Sobre el proyecto</h2>
+          <p>Proyecto educativo sin fines de lucro orientado al acceso a recursos visuales, comunicativos y pedagógicos para docentes, familias y estudiantes.</p>
+        </div>
+        <div class="accesos">
+          <h2>Accesos rápidos</h2>
+          <div class="pastillas">
+            <a class="pastilla" href="https://crebeucayali.weebly.com/">Web principal</a>
+            <a class="pastilla" href="https://gabriel-lsp.github.io/banco-digital-lsp/">Banco LSP</a>
+            <a class="pastilla" href="#recursos">Braille</a>
+            <a class="pastilla" href="#recursos">Materiales</a>
+            <a class="pastilla" href="https://gabriel-lsp.github.io/banco-digital-lsp/contacto.html">Contacto</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Recursos accesibles CREBE Ucayali</p>
+      <p>Desarrollado por Gabriel Bermúdez con apoyo institucional del CREBE "Señor de los Milagros" - Ucayali.</p>
+    </footer>
+  </div>
+</body>
+</html>
